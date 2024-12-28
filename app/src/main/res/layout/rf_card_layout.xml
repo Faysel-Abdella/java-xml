@@ -80,21 +80,23 @@
 
     </LinearLayout>
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
         android:gravity="center"
         android:text=" RF카드를 결제 단말기에 접촉해주세요"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:fontFamily="@font/inter_bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
     </TextView>
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -106,18 +108,18 @@
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627">
 
     </ImageView>
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:background="#FFFFFF"
-        android:paddingTop="10dp"
-        android:paddingBottom="25dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -154,7 +156,7 @@
                 android:text="베이직"
                 android:textColor="#0A0758"
                 android:textFontWeight="600"
-
+                android:layout_gravity="end"
                 android:textSize="25sp">
 
             </TextView>
@@ -164,6 +166,8 @@
                 android:layout_height="wrap_content"
                 android:text="￦ 10,000원"
                 android:textColor="#C80000"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
                 android:textFontWeight="700"
                 android:textSize="25sp">
 
