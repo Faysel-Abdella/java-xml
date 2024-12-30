@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FragmentFrame249">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:alpha="0.5"
+            android:layout_gravity="top"
+            android:background="@drawable/shadow_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="화면 설정"
+                android:textSize="20dp"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="5dp"
+                android:background="#CAC3F1"
+                android:fontFamily="@font/inter"/>
+
+            <TextView
+                android:id="@+id/button31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장1"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="9dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/inter"
+                android:background="#C7C7C7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장2"
+                android:textSize="20dp"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/inter"
+                android:background="#C7C7C7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:elevation="7dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="7dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#000000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textColor="#7861F7"
+                        android:fontFamily="@font/inter"
+                        android:textFontWeight="700"
+                        android:text="제목을 넣으세요"
+                        android:background="#F2F0FF"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/design_default_color_primary"
+                        android:contentDescription="car1"
+                        android:src="@drawable/car1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingHorizontal="38dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="내용을 넣으세요"
+                            android:textFontWeight="600"
+                            android:textColor="#0A0758"
+                            android:textSize="14sp"
+                            app:fontWeight="500"
+                            android:gravity="center"
+                            tools:ignore="HardcodedText">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | "
+                            android:textColor="#0A0758"
+                            android:layout_marginHorizontal="10dp"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/icon_clock">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="예상시간"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="가격을 설정해주세요"
+                        android:textColor="#C80000"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

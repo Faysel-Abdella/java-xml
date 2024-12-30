@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#3E0AB4"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frame223"
+    android:background="#3E0AB4">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="74dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_height="46dp"
+        android:id="@+id/back6"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+
         android:layout_marginStart="42dp"
-        android:layout_marginTop="37dp">
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:contentDescription=" "
-                android:src="@drawable/back">
+                android:src="@drawable/vector_1">
 
             </ImageView>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:textSize="16sp"
                 android:fontFamily="@font/inter_bold"
+                android:textColor="#A8A8A8"
                 android:layout_height="wrap_content"
                 android:text="이전">
 
@@ -42,35 +48,39 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end|center"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="42dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="UseCompoundDrawables">
+        android:orientation="horizontal">
 
 
         <ImageView
-            android:layout_width="25dp"
+            android:layout_width="34dp"
             android:id="@+id/alarm_icon"
 
             android:backgroundTint="@color/design_default_color_primary"
             android:background="@color/design_default_color_primary"
-            android:src="@drawable/alarm"
+            android:src="@drawable/icons_clock"
+            android:scaleType="fitXY"
             android:layout_marginHorizontal="5dp"
             android:contentDescription="alarm"
-            android:layout_height="25dp">
+            android:layout_height="34dp">
 
         </ImageView>
+
         <TextView
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/inter_bold"
             android:text="59"
-            android:textFontWeight="700"
-            android:textSize="30sp"
             android:textColor="@color/design_default_color_on_primary"
-            android:layout_height="wrap_content">
+            android:textFontWeight="700"
+            android:textSize="34dp">
 
         </TextView>
 
@@ -80,36 +90,45 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="232dp"
         android:fontFamily="@font/inter_bold"
-        android:text="결제가 되지 않았습니다. \n 다시 시도해주세요."
+        android:gravity="center"
+        android:text="신용카드 결제를 진행하고 있습니다.\n  카드를 제거하지 마세요."
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        >
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021">
 
     </TextView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:background="#FFFFFF"
-        android:layout_alignParentBottom="true"
-        android:paddingTop="10dp"
-        android:paddingBottom="25dp">
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:id="@+id/button15"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:background="#F2F0FE"
             android:gravity="center"
             android:paddingHorizontal="43dp"
             android:text="결제 예정 금액"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:fontFamily="@font/inter_bold"
             android:textColor="#0A0758"
-            android:textSize="25sp">
+            android:textFontWeight="700"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         </TextView>
 
@@ -127,8 +146,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="베이직"
-                android:fontFamily="@font/inter_semibold"
                 android:textColor="#0A0758"
+                android:fontFamily="@font/inter_bold"
+                android:textFontWeight="700"
+                android:layout_gravity="end"
                 android:textSize="25sp">
 
             </TextView>
@@ -137,8 +158,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="￦ 10,000원"
-                android:fontFamily="@font/inter_bold"
                 android:textColor="#C80000"
+                android:fontFamily="@font/inter_bold"
+                android:textStyle="bold"
+                android:textFontWeight="700"
                 android:textSize="25sp">
 
             </TextView>
@@ -148,4 +171,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

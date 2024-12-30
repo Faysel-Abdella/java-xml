@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="514dp"
+        android:layout_height="305dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정상 카드가 아닙니다.\n 카운터에 문의해주세요."
+            android:fontFamily="@font/inter"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="18dp"
+            android:textStyle="bold"
+            android:textColor="#0A0758"
+            android:textFontWeight="600"
+            app:fontWeight="700"
+            tools:ignore="HardcodedText"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="28dp"
+                android:gravity="start"
+                android:text="초 후 종료"
+                android:textSize="20sp"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button11"
+            android:layout_width="129dp"
+            android:layout_height="57dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="처음으로"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter"
+            android:textFontWeight="700"
+            app:fontWeight="700"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,74 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="4dp"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="514dp"
+            android:layout_height="305dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메인화면의 설정을 변경합니다.\n 이전 설정은 지워집니다. \n계속 하시겠습니까?"
+                android:fontFamily="@font/inter"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="118dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="예"
+                    android:textColor="#3F3F3F"
+                    android:backgroundTint="#CAC3F1"
+                    android:layout_marginRight="20dp"
+                    android:textSize="24dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+
+                    android:layout_width="118dp"
+                    android:layout_height="34dp"
+                    android:background="#DBDBDB"
+                    android:gravity="center"
+                    android:text="아니요"
+                    android:textColor="#3F3F3F"
+                    android:textSize="24dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    tools:context=".Frame232">
+
+    <TextView
+        android:id="@+id/passwordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/inter"
+        android:text="PASSWORD"
+        android:textColor="@color/white"
+        android:textFontWeight="900"
+        android:textSize="30sp"
+        android:letterSpacing="0.1"
+        app:fontWeight="700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:id="@+id/passwordDotsContainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:spacing="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordTitle">
+
+        <TextView
+            android:id="@+id/passwordDot1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/passwordDot2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/passwordDot3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/passwordDot4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordDotsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:orientation="horizontal"
+        android:spacing="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordTitle">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/keypadGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:columnCount="5"
+        android:rowCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordDotsContainer">
+
+        <!-- First Row -->
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            style="@style/KeypadButton"/>
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/KeypadButton"
+            android:text="2"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/KeypadButton"
+            android:text="3"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/KeypadButton"
+            android:text="4"
+            android:backgroundTint="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/KeypadButton"
+            android:text="5"
+            android:backgroundTint="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <!-- Second Row -->
+        <Button
+            android:id="@+id/btn6"
+            style="@style/KeypadButton"
+            android:text="6"
+            android:backgroundTint="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/KeypadButton"
+            android:text="7"
+            android:backgroundTint="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/KeypadButton"
+            android:text="8"
+            android:backgroundTint="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/KeypadButton"
+            android:text="9"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/KeypadButton"
+            android:text="0"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:textFontWeight="800"
+            app:fontWeight="800"
+            tools:ignore="HardcodedText"
+            android:elevation="0dp" />
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/btnClear"
+        style="@style/KeypadButtonRed"
+        android:text="c"
+        android:backgroundTint="@null"
+        android:stateListAnimator="@null"
+        android:textFontWeight="800"
+        app:fontWeight="800"
+        tools:ignore="HardcodedText"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keypadGrid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FragementFrame234">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:alpha="0.5"
+        android:layout_gravity="top"
+        android:background="@drawable/shadow_top" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="#f2f2f2">
+
+        <GridLayout
+            android:layout_margin="20dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:padding="16dp"
+           >
+
+            <!-- First Row -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="start"
+                android:text="업체명"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+
+
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=":"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="start"
+                android:text="대도 카워시"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <!-- Second Row -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="사업자 번호"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=":"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="110-110-111011"
+                android:fontFamily="@font/inter"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:textColor="#000000" />
+
+            <!-- Third Row -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="버전 정보"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=":"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:layout_gravity="start|bottom"
+
+                android:fontFamily="@font/inter"
+                android:textFontWeight="500"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:text="v 1.02"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </GridLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

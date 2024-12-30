@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="12dp"
+    android:id="@+id/popup_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="4dp"
+    android:padding="20dp">
+
+<LinearLayout
+android:layout_width="514dp"
+android:layout_height="305dp"
+android:gravity="center"
+android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="RF 카드 잔액이 부족합니다."
+    android:fontFamily="@font/inter"
+    android:textSize="24dp"
+    android:layout_marginBottom="18dp"
+    android:textStyle="bold"
+    android:textColor="#0A0758"
+    android:textFontWeight="600"
+    app:fontWeight="700"
+    tools:ignore="HardcodedText"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:textColor="#FF0000"
+        android:textFontWeight="600"
+        app:fontWeight="700"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="28dp"
+        android:gravity="start"
+        android:text="초 후 종료"
+        android:textSize="20dp"
+        android:layout_marginBottom="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        app:fontWeight="700"
+        tools:ignore="HardcodedText"/>
+</LinearLayout>
+
+<TextView
+    android:id="@+id/button10"
+    android:layout_width="129dp"
+    android:layout_height="57dp"
+    android:background="@drawable/rounded_button"
+    android:gravity="center"
+    android:text="처음으로"
+    android:textColor="#FFFFFF"
+    android:textSize="24dp"
+    android:fontFamily="@font/inter"
+    android:textFontWeight="700"
+    app:fontWeight="700"
+    tools:ignore="HardcodedText" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>

@@ -28,6 +28,17 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        CardView button20 = findViewById(R.id.button20);
+
+        // Set an onClickListener
+        button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start a new activity
+                Intent intent = new Intent(MainActivity.this, Frame232.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

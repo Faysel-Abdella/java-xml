@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frame221"
+    android:background="#3E0AB4">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/back2"
+        android:layout_width="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="46dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="37dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="68dp"
+            android:layout_height="42dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            android:background="@drawable/border_card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="6.5dp"
+                    android:src="@drawable/vector_1"
+                    android:contentDescription=" " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_thin"
+                    android:text="이전"
+                    android:textColor="#A8A8A8" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        tools:ignore="UseCompoundDrawables">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/alarm_icon"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/icons_clock"
+            android:scaleType="fitXY"
+            android:layout_marginHorizontal="5dp"
+            android:contentDescription="alarm"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="59"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textFontWeight="700"
+
+            android:textSize="34dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/myText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="현금 투입구에 지폐를 넣어 주세요\n투입된 지폐는 반환되지 않습니다"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textFontWeight="600"
+            app:fontWeight="700"
+            tools:ignore="HardcodedText"
+
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.866" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="276dp"
+            android:layout_height="117dp"
+            android:src="@drawable/inserting_bill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#F2F0FE"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:paddingHorizontal="43dp"
+            android:text="결제 예정 금액"
+            android:textColor="#0A0758"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textFontWeight="600"
+            app:fontWeight="700"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:gravity="end|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="베이직"
+                android:textColor="#0A0758"
+                android:textSize="25sp"
+                android:textFontWeight="600"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="￦ 10,000원"
+                android:textColor="#C80000"
+                android:textSize="25sp"
+                android:textFontWeight="600"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

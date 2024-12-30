@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E0AB4"
+    tools:context=".Frame229">
+
+    <TextView
+        android:id="@+id/btnAddBuyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingHorizontal="13dp"
+
+        android:paddingVertical="12dp"
+        android:text="고객사 로고"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <LinearLayout
+        android:id="@+id/mainCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3E0AB4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="4dp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+
+                    android:elevation="7dp"
+                    android:backgroundTint="#CAC3F1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="고압"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="X 1"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            android:layout_margin="8dp"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="6dp"
+                    android:elevation="7dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="거품"
+                            android:layout_marginTop="13dp"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="X 1"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:elevation="7dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="@font/inter"
+                            android:gravity="center"
+                            android:text="스노우폼"
+                            android:textColor="#0A0758"
+                            android:textFontWeight="600"
+                            android:textSize="24sp"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="X 2"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="4dp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+
+                    android:elevation="7dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="왁스"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="X 2"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="6dp"
+                    android:elevation="7dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="하부"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="X 3"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="283dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:elevation="7dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="방수코팅"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="X 5"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/inter"
+                            android:textFontWeight="600"
+                            app:fontWeight="700"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#0A0758"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="start"
+
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="282.95dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:elevation="7dp"
+                    android:backgroundTint="#CAC3F1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="초기화"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:textFontWeight="600"
+                        app:fontWeight="700"
+                        tools:ignore="HardcodedText"
+                        android:textColor="#0A0758"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="185.7dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:elevation="7dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    android:layout_marginHorizontal="10.2dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="+5,000원"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:textFontWeight="600"
+                        app:fontWeight="700"
+                        tools:ignore="HardcodedText"
+                        android:textColor="#0A0758"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="185.7dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:elevation="7dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="7dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#0B0759">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="+10,000원"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:textFontWeight="600"
+                        app:fontWeight="700"
+                        tools:ignore="HardcodedText"
+                        android:textColor="#0A0758"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="#E8E8E8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/final3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:text="사용 가능 시간"
+            android:textSize="27dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:textFontWeight="700"
+            android:layout_marginStart="41dp"
+            app:fontWeight="700"
+            tools:ignore="HardcodedText"
+
+
+            android:textColor="#7861F7" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="5:00"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:fontFamily="@font/inter_bold"
+            android:textFontWeight="600"
+
+            app:fontWeight="700"
+
+            tools:ignore="HardcodedText"
+
+
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="결제 예정 금액"
+                android:textSize="24dp"
+                android:textFontWeight="700"
+                app:fontWeight="700"
+                tools:ignore="HardcodedText"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#330b73"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="￦ 10,000원"
+                android:gravity="center"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#C80000"
+                android:textFontWeight="700"
+                app:fontWeight="700"
+                android:textSize="25dp"
+                tools:ignore="HardcodedText"
+
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#c9bfd9"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:paddingHorizontal="70dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="결제하기"
+            android:textColor="#27075b"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

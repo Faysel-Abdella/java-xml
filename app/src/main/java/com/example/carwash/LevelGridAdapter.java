@@ -42,9 +42,9 @@ public class LevelGridAdapter extends BaseAdapter {
         if (layoutInflater == null) {
             layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
-        if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.level_show, null);
-        }
+//        if (convertView == null) {
+//            convertView = layoutInflater.inflate(R.layout.level_show, null);
+//        }
 
 
         return convertView;

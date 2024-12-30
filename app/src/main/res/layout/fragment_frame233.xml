@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2"
+    tools:context=".fragments.FragmentFrame233">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:alpha="0.5"
+            android:layout_gravity="top"
+            android:background="@drawable/shadow_top" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="40dp">
+        <!-- Mode Settings & Timer Section -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="모드설정"
+            android:textSize="17sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="60dp"
+            android:gravity="center_vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#C7C7C7"
+                app:contentPadding="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동 세차기"
+                android:layout_gravity="center_vertical"
+                android:background="#CAC3F1"
+                android:textSize="15dp"
+                android:paddingHorizontal="5dp"
+                android:fontFamily="@font/inter"
+                android:textColor="#3F3F3F" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#C7C7C7"
+                app:contentPadding="1dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수동 세차기"
+                android:layout_gravity="center_vertical"
+
+                android:background="#DBDBDB"
+                android:paddingHorizontal="5dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/inter"
+                android:textColor="#3F3F3F" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시작 유예 시간"
+                android:textSize="15dp"
+                android:paddingHorizontal="5dp"
+                android:fontFamily="@font/inter"
+                android:textColor="#3F3F3F"
+
+                android:layout_marginStart="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#C7C7C7"
+                app:contentPadding="1dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:30"
+                android:background="#DBDBDB"
+                android:paddingHorizontal="10dp"
+
+                android:textSize="15dp"
+                android:fontFamily="@font/inter"
+                android:textColor="#3F3F3F"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- Volume Slider -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="볼륨"
+            android:textSize="17sp"/>
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="7dp">
+
+
+
+            <SeekBar
+                android:layout_marginLeft="15dp"
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="15dp"
+                android:minHeight="4dp"
+                android:progress="50"
+                android:max="100"
+                android:progressDrawable="@drawable/seekbar_track"
+                android:thumb="@drawable/seekbar_thumb"
+                android:thumbOffset="0dp"
+                android:splitTrack="false"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"/>
+
+<!--            <SeekBar-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:progress="50"-->
+<!--                android:layout_marginRight="200dp"/>-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="단말기 설정"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="60dp"
+            >
+
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#C7C7C7"
+            app:contentPadding="1dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="26dp"
+                android:background="#DBDBDB"
+                />
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="로고 설정"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#C7C7C7"
+                app:contentPadding="1dp"
+                android:layout_marginStart="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:text="설정하기"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="14dp"
+
+                android:layout_gravity="center"
+                android:background="#CAC3F1"
+                />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="신용카드 설정"/>
+
+        <!-- COM Port Settings -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="7dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                app:cardBackgroundColor="#C7C7C7"
+                android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:background="#DBDBDB"
+                android:layout_gravity="start"
+
+                android:entries="@array/com_ports"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:paddingVertical="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/polygon_10"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                app:cardBackgroundColor="#C7C7C7"
+                android:layout_marginStart="7dp"
+
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="98dp"
+                    android:layout_height="26dp"
+                    android:background="#DBDBDB"
+                    android:layout_gravity="start"
+
+                    android:entries="@array/com_ports"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/polygon_10"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:text="영수증 프린터 포토"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="7dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                app:contentPadding="1dp"
+                app:cardBackgroundColor="#C7C7C7"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="98dp"
+                    android:layout_height="26dp"
+                    android:background="#DBDBDB"
+                    android:layout_gravity="start"
+
+                    android:entries="@array/com_ports"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/polygon_10"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:text="RFID 회로 포토"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="7dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                app:cardBackgroundColor="#C7C7C7"
+                app:contentPadding="1dp"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="98dp"
+                    android:layout_height="26dp"
+                    android:background="#DBDBDB"
+                    android:layout_gravity="start"
+
+                    android:entries="@array/com_ports"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/polygon_10"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:text="결제 방법 설정"
+            android:layout_marginTop="7dp"/>
+
+        <!-- Payment Methods -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="현금"
+                    android:layout_gravity="center_vertical"
+                    android:background="#DBDBDB"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="29dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    android:layout_marginStart="8dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RFID"
+                    android:layout_gravity="center_vertical"
+
+                    android:background="#DBDBDB"
+                    android:paddingHorizontal="26dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    android:layout_marginStart="7dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신용카드"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+
+                    android:fontFamily="@font/inter"
+                    android:background="#DBDBDB"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="간편결제"
+                    android:background="#CAC3F1"
+                    android:paddingHorizontal="15dp"
+
+                    android:textSize="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F"/>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="사용 가능 언어"
+                android:layout_marginTop="7dp"/>
+
+            <!-- Payment Methods -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    android:layout_marginStart="60dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="한국어"
+                    android:layout_gravity="center_vertical"
+                    android:background="#DBDBDB"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="22dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="영어"
+                    android:layout_gravity="center_vertical"
+
+                    android:background="#DBDBDB"
+                    android:paddingHorizontal="29dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    android:layout_marginStart="7dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중국어"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="22dp"
+
+                    android:fontFamily="@font/inter"
+                    android:background="#DBDBDB"
+                    android:textColor="#3F3F3F" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Payment Methods -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="화면 모드"
+                android:layout_marginTop="7dp"/>
+
+            <!-- Payment Methods -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가로모드"
+                    android:layout_gravity="center_vertical"
+                    android:background="#DBDBDB"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Payment Methods -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="배속 시간 표시"
+                android:textSize="17sp"
+                android:layout_marginTop="7dp"/>
+
+            <!-- Payment Methods -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배율표시"
+                    android:layout_gravity="center_vertical"
+                    android:background="#DBDBDB"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Payment Methods -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="배속 시간 연동"
+                android:textSize="17sp"
+                android:layout_marginTop="7dp"/>
+
+            <!-- Payment Methods -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C7C7C7"
+                    app:contentPadding="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#DBDBDB"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#3F3F3F" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Payment Methods -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="대표색 전환"
+                android:textSize="17sp"
+                android:layout_marginTop="7dp"/>
+
+            <!-- Payment Methods -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+
+
+                <TextView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#3E0AB4"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:fontFamily="@font/inter" />
+
+
+                <!-- Payment Methods -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+    </LinearLayout>
+
+</FrameLayout>

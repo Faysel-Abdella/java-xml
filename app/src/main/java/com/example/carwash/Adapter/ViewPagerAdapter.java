@@ -8,6 +8,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import com.example.carwash.fragments.FragementFrame234;
 import com.example.carwash.fragments.FragmentFrame233;
 import com.example.carwash.fragments.FragmentFrame235;
+import com.example.carwash.fragments.FragmentFrame241;
 import com.example.carwash.fragments.FragmentFrame242;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
@@ -28,9 +29,9 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 2:
                 return new FragmentFrame242();
             case 3:
-                return new FragementFrame234();
-//            case 4:
-//                return new InfoFragment();
+                return new FragmentFrame233();
+            case 4:
+                return new FragementFrame234(); // Temporary replacement for InfoFragment
             default:
                 return new FragmentFrame233();
         }

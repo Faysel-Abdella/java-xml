@@ -13,29 +13,99 @@
         android:theme="@style/Theme.CarWash"
         tools:targetApi="31">
         <activity
+            android:name=".Frame231"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".Frame230"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            />
+        <activity
+            android:name=".Frame229"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".Frame228"
+            android:exported="false"
+            android:theme="@style/Theme.CarWash"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".HomeFragment"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".Frame233"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".Frame232"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".Frame225"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame223"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame224"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame251"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame219"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame222"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame221"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Frame220"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
             android:name=".WaitingPage"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".QRScannPage"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".CounterPage"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".payment_option"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".welcome_page"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".PaymentScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".LevelScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
